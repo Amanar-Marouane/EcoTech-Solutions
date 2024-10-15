@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FBFBFD;
+    font-family: Roboto;
+}
+
+.Head {
+    width: 100%;
+    height: 50px;
+    background-color: #E7ECFF;
+    z-index: 2;
+    position: absolute;
+}
+
+.HeadContent {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.HeadContent Nav {
+    width: fit-content;
+    width: 50%;
+}
+
+.HeadContent Nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.HeadContent Nav ul li {
+    margin-right: 25px;
+}
+
+.HeadContent Nav a:hover {
+    font-weight: bold;
+}
+
+.HeadContent a {
+    text-align: center;
+    text-decoration: none;
+    color: #505F98;
+}
+
+.HeadContent h2 {
+    color: #37447E;
+    font-size: 26px;
+    font-family: Roboto;
+}
+
+.Landing {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Button {
+    width: 42%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Button button {
+    text-align: center;
+    background-color: #111B47;
+    color: white;
+    padding: 7px 50px;
+}
+
+.Button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    box-shadow: 2px 2px 0px 0px black;
+}
+
+/* Home Page */
+.Sec1 {
+    height: 1070px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.BackgroungImg1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Sec1Div {
+    position: absolute;
+    padding-left: 200px;
+    padding-top: 200px;
+    height: 100%;
+}
+
+.Sec1Div .Title h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #091133;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    line-height: 66px;
+}
+
+.Sec1Div .Description h3 {
+    width: 40%;
+    color: #505F98;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.Buttons {
+    margin-top: 20px;
+}
+
+.Buttons #B1 {
+    padding: 10px 40px;
+    background: #091133;
+    font-weight: bold;
+}
+
+.Buttons #B1 a {
+    color: white;
+}
+
+.Buttons #B2 {
+    padding: 10px 40px;
+    margin-left: 10px;
+    background: none;
+    border: 2px solid #091133;
+    font-weight: bold;
+}
+
+.Buttons #B2 a {
+    color: #091133;
+}
+
+.Buttons a {
+    text-decoration: none;
+}
+
+.Sec2 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.Sec2Div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 150px 0px 0px 200px;
+}
+
+.BackgroundImg2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.Content .Title h1{
+    color: #091133;
+    font-size: 36px;
+    font-family: Roboto;
+    margin-bottom: 10px;
+}
+
+.Content .Description h3{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: Roboto;
+    color: #6F7CB2;
+    width: 60%;
+    font-weight: normal;
+}
+
+.att {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.att1 {
+    width: 30%;
+}
+
+
+.att2 {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.att h2 {
+    color: #091133;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+.att h4 {
+    color: #5D6970;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+.Sec4And5 {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sec4And5 .BackgroundImg3And4 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sec4And5 .Content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.Sec4And5 .Content .Button {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.Sec6 {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BackgroungImg5 {
+    height: 100%;
+    width: 100%;
+}
+
+.BackgroungImg5 img {
+    width: 100%;
+}
+
+.Sec6 .Content {
+    width: 100%;
+    position: absolute;
+    padding: 0;
+}
+
+.Sec6 .Content .Title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Sec6 .Content .Description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Sec6 .Content .Description h3 {
+    width: 40%;
+}
+
+.Sec6 .Content .Price {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Sec6 .Content .Price h1 {
+    width: 100%;
+    text-align: center;
+    color: #222F65;
+    font-size: 50px;
+    font-family: Roboto;
+}
+
+.Sec6 .Content .Price h2 {
+    width: 100%;
+    text-align: center;
+    color: #37447E;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+.Sec6 .Content .Button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+.Sec6 .Content .Button h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #5D6970;
+    font-size: 14px;
+    font-family: Roboto;
+}
+
+/* footer */
+.Footer {
+    width: 100%;
+    height: 200px;
+    background-color: #E7ECFF;
+    display: flex;
+    justify-content: center;
+}
+
+.FooterContent {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Top {
+    width: 100%;
+    height: 60%;
+    border-bottom: 1px solid #CDD1D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Top h3 {
+    color: #939EA4;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Top h2 {
+    color: #37447E;
+    font-size: 26px;
+}
+
+.Top button {
+    text-align: center;
+    background-color: #111B47;
+    color: white;
+    padding: 7px 50px;
+}
+
+.Top a{
+    text-decoration: none;
+    color: white;
+}
+
+.Bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.QuickAccess {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.QuickAccess a,
+.QuickAccess h4 {
+    text-decoration: none;
+    color: #929ECC;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.QuickAccess h4:hover {
+    font-weight: bold;
+}
+
+.SocialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
