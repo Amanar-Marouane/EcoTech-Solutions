@@ -331,7 +331,7 @@ button:hover {
 
 .Sec6 {
     width: 100%;
-    height: 700px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -636,10 +636,10 @@ body.DarkModeFun {
 
 body.DarkModeFun h1,
 body.DarkModeFun h2,
+body.DarkModeFun label,
 body.DarkModeFun a {
     color: #fff !important;
 }
-
 
 body.DarkModeFun h3,
 body.DarkModeFun h5,

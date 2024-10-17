@@ -678,6 +678,7 @@ body.DarkModeFun {
 
 body.DarkModeFun h1,
 body.DarkModeFun h2,
+body.DarkModeFun label,
 body.DarkModeFun a {
     color: #fff !important;
 }
