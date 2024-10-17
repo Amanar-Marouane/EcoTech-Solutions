@@ -3,12 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #FBFBFD;
     font-family: Roboto;
-    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .Head {
@@ -16,21 +17,19 @@ body {
     height: 50px;
     background-color: #E7ECFF;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .HeadContent {
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin-right: 10px;
     margin-left: 10px;
 }
 
 .HeadContent Nav {
-    width: fit-content;
     width: 50%;
 }
 
@@ -48,16 +47,80 @@ body {
     font-weight: bold;
 }
 
+.checkbtn {
+    font-size: 30px;
+    color: #37447E;
+    float: left;
+    line-height: 80px;
+    margin-left: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 .HeadContent a {
     text-align: center;
     text-decoration: none;
     color: #505F98;
 }
 
-.HeadContent h2 {
+@media (max-width: 773px) {
+    label.Logo {
+        font-size: 16px;
+        padding-right: 120px;
+        transition: 500ms ease;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #091133;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        z-index: 10;
+        transition: all .5s;
+        overflow: hidden;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-top: 30px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .HeadContent a {
+        color: #fff;
+    }
+}
+
+.HeadContent h2,
+.HeadContent .Logo {
     color: #37447E;
     font-size: 26px;
     font-family: Roboto;
+    font-weight: bolder;
 }
 
 .Landing {
@@ -84,7 +147,7 @@ body {
 }
 
 button:hover {
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 2px 0px 0px black;
 }
 
 /* Our products page */
@@ -379,7 +442,7 @@ button:hover {
     transition: 0.3s;
 }
 
-label::after {
+.DarkModeToggleLabel::after {
     content: '';
     width: 20px;
     height: 20px;
@@ -392,46 +455,46 @@ label::after {
     transition: 0.3s;
 }
 
-input {
+#DarkModeToggle {
     width: 0;
     height: 0;
     visibility: hidden;
 }
 
-input:checked+label:after {
+#DarkModeToggle:checked+label:after {
     left: 95px;
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
 
-label:active:after {
+.DarkModeToggleLabel:active:after {
     width: 50px;
 }
 
-label svg {
+.DarkModeToggleLabel svg {
     position: absolute;
     top: 5px;
-    z-index: 10;
+    z-index: 1;
 }
 
-label svg.Sun {
+.DarkModeToggleLabel svg.Sun {
     fill: #fff;
     left: 5px;
     transition: 0.3s;
 }
 
-label svg.Moon {
+.DarkModeToggleLabel svg.Moon {
     fill: #7e7e7e;
     left: 95px;
     transform: translateX(-100%);
     transition: 0.3s;
 }
 
-input:checked+label svg.Moon {
+#DarkModeToggle:checked+label svg.Moon {
     fill: #fff;
 }
 
-input:checked+label svg.Sun {
+#DarkModeToggle:checked+label svg.Sun {
     fill: #7e7e7e;
 }
 
