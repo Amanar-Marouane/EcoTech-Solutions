@@ -219,13 +219,25 @@ button:hover {
     }
 }
 
+@media (max-width: 690px) {
+    .Container {
+        height: 70vh;
+    }
+    
+    .Slider {
+        width: 80%;
+        overflow: hidden;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+}
+
 .Products {
     width: 100%;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
 }
 
 .CardContainer {
@@ -289,6 +301,57 @@ button:hover {
 .Buttons a {
     text-decoration: none;
     color: #fff;
+}
+
+@media (max-width: 1025px) {
+    .CardContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    .CardContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Products {
+        height: 160vh;
+        align-items: flex-start;
+    }
+
+    .CardContainer {
+        height: 60%;
+    }
+
+    .CardContainer {
+        height: 40%;
+    }
+
+    .CardContainer #M1 {
+        order: -1;
+    }
+
+    .CardContainer #M3 {
+        order: 2;
+    }
+
+    .Info {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .CardContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .Products {
+        height: 240vh;
+        align-items: flex-start;
+    }
 }
 
 /* footer */
