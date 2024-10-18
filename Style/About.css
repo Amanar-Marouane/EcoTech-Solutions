@@ -500,26 +500,30 @@ button:hover {
     }
 }
 
-@media (max-width: 804px) {
+@media (max-width: 805px) {
+    .Sec3 {
+        height: 1200px;
+    }
+
     .Sec3 .BackgroungImg7 {
         position: absolute;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: -1;
+        z-index: 2;
         opacity: 0.6;
     }
 
     .Sec3 .BackgroungImg7 img {
         width: 100%;
-        height: 100%;
     }
 
     .Sec3 .Content {
         width: 100%;
         justify-content: center;
         align-items: center;
+        z-index: 10;
     }
 
     .Sec3 .Content .Title,
@@ -630,6 +634,10 @@ button:hover {
 }
 
 @media (max-width: 971px) {
+    .Sec4 {
+        height: 700px;
+    }
+
     .Sec4 .BackgroundImg4 {
         height: 550px;
     }
@@ -637,18 +645,24 @@ button:hover {
     .Sec4 .Content {
         height: 100%;
         row-gap: 0px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-end;
     }
     
     .Sec4 .Content .Title {
         width: 100%;
+        height: 10%;
     }
     
     .Sec4 .Content .Description {
         width: 100%;
+        height: 50%;
     }
     
     .Sec4 .Content .Button {
         width: 100%;
+        height: 20%;
     }
 }
 
