@@ -511,7 +511,7 @@ button:hover {
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1000px) {
     .Sec4And5 {
         height: 350px;
     }
@@ -523,7 +523,7 @@ button:hover {
     }
 
     .Sec4And5 .BackgroundImg3And4 img {
-        width: 100%;
+        width: 40%;
     }
     
     .Sec4And5 .Content {

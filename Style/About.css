@@ -290,11 +290,12 @@ button:hover {
         width: 90%;
         margin: 0;
         height: 80%;
+        z-index: 10;
     }
 
     .Sec1 .BackgroundImg6 {
         position: absolute;
-        z-index: -1;
+        z-index: 2;
         opacity: 0.8;
     }
 
@@ -921,6 +922,7 @@ body.DarkModeFun a {
 
 body.DarkModeFun h3,
 body.DarkModeFun h5,
+body.DarkModeFun h6,
 body.DarkModeFun h4 {
     color: #CDD1D4 !important;
 }
