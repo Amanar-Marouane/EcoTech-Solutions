@@ -173,7 +173,6 @@ button:hover {
     width: 100%;
     height: 630px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -182,7 +181,7 @@ button:hover {
     width: 60%;
     height: 70%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
@@ -280,8 +279,42 @@ button:hover {
     font-weight: normal;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 971px) {
+    .Sec1 {
+        height: 650px;
+    }
+}
 
+@media (max-width: 761px) {
+    .Sec1 .Content {
+        width: 90%;
+        margin: 0;
+        height: 80%;
+    }
+
+    .Sec1 .BackgroundImg6 {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.8;
+    }
+
+    .Sec1 .Content .Title {
+        margin-top: 60px;
+    }
+
+    .Sec1 .Content .Title,
+    .Sec1 .Content .Description {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .Sec1 .Content .Description h3 {
+        color: #091133;
+    }
+
+    .Sec1 .Content .att .MiniDescription h6 {
+        color: #091133;
+    }
 }
 
 .Sec2 {
@@ -301,21 +334,21 @@ button:hover {
 }
 
 .Sec2 .BackgroundImg3 img {
-    width: 480px;
+    width: 100%;
 }
 
 .Sec2 .Content {
     width: 50%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .Sec2 .Content .Title {
     width: 80%;
-    height: 50%;
+    height: 30%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -338,6 +371,34 @@ button:hover {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+}
+
+@media (max-width: 671px) {
+    .Sec2 .BackgroundImg3 {
+        width: 100%;
+        position: absolute;
+        opacity: 0.5;
+    }
+
+    .Sec2 .BackgroundImg3 img {
+        width: 80%;
+    }
+
+    .Sec2 .Content {
+        width: 100%;
+        z-index: 2;
+    }
+
+    .Sec2 .Content .Title,
+    .Sec2 .Content .Description {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Sec2 .Content .Description h3 {
+        color: #091133;
+    }
 }
 
 .Sec3 {
@@ -412,6 +473,107 @@ button:hover {
     width: 80%;
 }
 
+@media (max-width: 971px) {
+    
+    .Sec3 .Content {
+        row-gap: 20px;
+    }
+    
+    .Content .Description h3 {
+        width: 100%;
+    }
+    
+    .Sec3 .Content .att {
+        row-gap: 25px;
+    }
+    
+    .Sec3 .Content .att .att1,
+    .Sec3 .Content .att .att2,
+    .Sec3 .Content .att .att3,
+    .Sec3 .Content .att .att4 {
+        row-gap: 3px;
+    }
+    
+    .Sec3 .Content .att .MiniDescription {
+        width: 99%;
+    }
+}
+
+@media (max-width: 804px) {
+    .Sec3 .BackgroungImg7 {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+    .Sec3 .BackgroungImg7 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Sec3 .Content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Sec3 .Content .Title,
+    .Sec3 .Content .Description,
+    .Sec3 .Content .att {
+        justify-content: center;
+        width: 65%;
+        text-align: center;
+    }
+
+    .Sec3 .Content .Description h3,
+    .Sec3 .Content .att .MiniDescription h6 {
+        color: #091133;
+    }
+}
+
+@media (max-width: 490px) {
+    .Sec3 {
+        height: 550px;
+    }
+
+    .Sec3 .Content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+    }
+
+    .Sec3 .Content .att {
+        width: 100%;
+    }
+
+    .Sec3 .Content .Title {
+        width: 100%;
+    }
+
+    .Sec3 .Content .Title h1 {
+        font-size: 30px;
+    }
+
+    .Sec3 .Content .Description {
+        width: 100%;
+    }
+
+    .Sec3 .Content .Description h3 {
+        font-size: 15px;
+    }
+
+    .Sec3 .Content .att .MiniDescription h6 {
+        font-size: 10px;
+    }
+}
+
 .Sec4 {
     width: 100%;
     height: 550px;
@@ -466,6 +628,67 @@ button:hover {
     align-items: center;
 }
 
+@media (max-width: 971px) {
+    .Sec4 .BackgroundImg4 {
+        height: 550px;
+    }
+
+    .Sec4 .Content {
+        height: 100%;
+        row-gap: 0px;
+    }
+    
+    .Sec4 .Content .Title {
+        width: 100%;
+    }
+    
+    .Sec4 .Content .Description {
+        width: 100%;
+    }
+    
+    .Sec4 .Content .Button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 846px) {
+    
+    .Sec4 .BackgroundImg4 {
+        width: 100%;
+        position: absolute;
+        opacity: 0.5;
+    }
+
+    .Sec4 .BackgroundImg4 img {
+        width: 80%;
+    }
+    
+    .Sec4 .Content {
+        width: 80%;
+        height: 90%;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .Sec4 .Content .Title {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .Sec4 .Content .Description {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .Sec4 .Content .Description h3 {
+        color: #091133;
+    }
+    
+    .Sec4 .Content .Button {
+        width: 100%;
+        justify-content: center;
+    }
+}
 /* footer */
 .Footer {
     width: 100%;
@@ -720,7 +943,7 @@ body.DarkModeFun svg path:not(footer svg path) {
     fill: white !important;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 710px) {
     .Footer {
         height: 300px;
     }

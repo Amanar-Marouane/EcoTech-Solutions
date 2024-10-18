@@ -237,6 +237,10 @@ button:hover {
         height: 700px;
     }
 
+    .Sec1 .BackgroungImg1 {
+        opacity: 0.5;
+    }
+
     .Sec1Div {
         display: flex;
         justify-content: center;
@@ -405,6 +409,7 @@ button:hover {
         display: flex;
         justify-content: center;
         width: 100%;
+        opacity: 0.5;
     }
     
     .Content .Title h1 {
@@ -514,6 +519,7 @@ button:hover {
     .Sec4And5 .BackgroundImg3And4 {
         width: 100%;
         position: absolute;
+        opacity: 0.5;
     }
 
     .Sec4And5 .BackgroundImg3And4 img {
@@ -957,7 +963,7 @@ body.DarkModeFun svg path:not(footer svg path) {
     fill: white !important;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 710px) {
     .Footer {
         height: 300px;
     }

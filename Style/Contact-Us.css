@@ -295,6 +295,96 @@ button:hover {
     box-shadow: 2px 2px 0px 0px black;
 }
 
+@media (max-width: 1000px) {
+    .Sec1 {
+        height: 700px;
+    }
+
+    .Content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .BackgroundImg {
+        width: 100%;
+        position: absolute;
+        opacity: 0.5;
+    }
+
+    .BackgroundImg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Hero {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Hero .Title {
+        text-align: center;
+    }
+
+    .Hero .Form form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .Form #FirstName {
+        width: 30%;
+    }
+
+    .Form #LastName {
+        width: 31%;
+    }
+
+    .Form button {
+        width: 61%;
+    }
+}
+
+@media (max-width: 670px) {
+    .Form {
+        width: 100%;
+    }
+
+    .Form #FirstName {
+        width: 61%;
+    }
+
+    .Form #LastName {
+        width: 61%;
+    }
+}
+
+@media (max-width: 450px) {
+    .Form #FirstName {
+        width: 80%;
+    }
+
+    .Form #LastName {
+        width: 80%;
+    }
+
+    .Form #PhoneNumber {
+        width: 80%;
+    }
+
+    .Form #Email {
+        width: 80%;
+    }
+
+    .Form #Message {
+        width: 80%;
+    }
+
+    .Form button {
+        width: 80%;
+    }
+}
+
 /* footer */
 .Footer {
     width: 100%;
@@ -549,7 +639,7 @@ body.DarkModeFun textarea::placeholder {
     color: #000;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 710px) {
     .Footer {
         height: 300px;
     }
