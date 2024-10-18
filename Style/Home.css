@@ -16,7 +16,7 @@ body {
     width: 100%;
     height: 50px;
     background-color: #E7ECFF;
-    z-index: 2;
+    z-index: 50;
     position: fixed;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
 }
@@ -112,6 +112,16 @@ body {
 
     .HeadContent a {
         color: #fff;
+    }
+}
+
+@media (max-width: 520px) {
+    label.Logo {
+        padding-right: 40px;
+    }
+
+    nav ul li a {
+        font-size: 25px;
     }
 }
 
@@ -222,6 +232,71 @@ button:hover {
     text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+    .Sec1 {
+        height: 700px;
+    }
+
+    .Sec1Div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        margin: auto;
+    }
+    
+    .Sec1Div .Title h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        line-height: 45px;
+    }
+
+    .Sec1Div .Description {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Sec1Div .Description h3 {
+        width: 70%;
+        text-align: center;
+        font-size: 22px;
+        color: #091133;
+        margin-top: 15px;
+    }
+
+    .Sec1 .Buttons button{
+        height: 50px;
+        width: 200px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    .Sec1 {
+        height: 500px;
+    }
+    
+    .Sec1Div .Title h1 {
+        font-size: 30px;
+        line-height: 25px;
+    }
+    
+    .Sec1Div .Description h3 {
+        width: 95%;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .Sec1 .Buttons button{
+        height: 40px;
+        width: 170px;
+        font-size: 10px;
+    }
+}
+
 .Sec2 {
     width: 100%;
     height: 600px;
@@ -243,6 +318,7 @@ button:hover {
     flex-direction: column;
     justify-content: flex-end;
     padding: 150px 0px 0px 200px;
+    z-index: 5;
 }
 
 .BackgroundImg2 {
@@ -298,6 +374,97 @@ button:hover {
     font-weight: normal;
 }
 
+@media (max-width: 1024px) {
+    .Sec2 {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Sec2Div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .Content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .BackgroundImg2 {
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .Content .Title h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .Content .Description {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Content .Description h3 {
+        font-size: 20px;
+        line-height: 26px;
+        font-family: Roboto;
+        color: #091133;
+        width: 70%;
+        font-weight: normal;
+    }
+    
+    .att {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .att h2 {
+        color: #000;
+    }
+    
+    .att h4 {
+        color: #000;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 520px) {
+    .Sec2 {
+        height: 450px;
+    }
+
+    .Sec2 .BackgroundImg2 img {
+        width: 100%;
+    }
+    
+    .Content .Title h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .Content .Description h3 {
+        font-size: 15px;
+        line-height: 23px;
+        width: 90%;
+        font-weight: normal;
+    }
+}
+
 .Sec4And5 {
     width: 100%;
     height: 550px;
@@ -327,6 +494,50 @@ button:hover {
     display: flex;
     justify-content: flex-start;
     margin-top: 15px;
+}
+
+@media (max-width: 1024px) {
+    
+    .Sec4And5 .Content .Button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    .Sec4And5 {
+        height: 350px;
+    }
+    
+    .Sec4And5 .BackgroundImg3And4 {
+        width: 100%;
+        position: absolute;
+    }
+
+    .Sec4And5 .BackgroundImg3And4 img {
+        width: 100%;
+    }
+    
+    .Sec4And5 .Content {
+        width: 80%;
+        align-items: center;
+    }
+
+    .Sec4And5 .Content .Description h3 {
+        width: 100%;
+        font-size: 15px;
+        color: #091133;
+    }
+
+    .Sec4And5 .Content .Title h1 {
+        font-size: 30px;
+    }
+    
+    .Sec4And5 .Content .Button {
+        justify-content: center;
+    }
 }
 
 .Sec6 {
@@ -410,6 +621,91 @@ button:hover {
     color: #5D6970;
     font-size: 14px;
     font-family: Roboto;
+}
+
+@media (max-width: 1024px) {
+    .Sec6 {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Sec6 .Content .Description h3 {
+        width: 80%;
+        font-size: 14px;
+    }
+    
+    .Sec6 .Content .Price {
+        margin-top: 5px;
+    }
+    
+    .Sec6 .Content .Button {
+        margin-top: 20px;
+    }
+
+    .Sec6 .Content .Title h1{
+        font-size: 30px;
+    }
+    
+    .Sec6 .Content .Price h1 {
+        font-size: 40px;
+    }
+    
+    .Sec6 .Content .Price h2 {
+        font-size: 18px;
+    }
+    
+    .Sec6 .Content .Button h3 {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 520px) {
+    .Sec6 {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Sec6 .Content .Description h3 {
+        width: 80%;
+        font-size: 8px;
+        line-height: 20px;
+    }
+    
+    .Sec6 .Content .Price {
+        margin-top: 5px;
+    }
+    
+    .Sec6 .Content .Button {
+        margin-top: 10px;
+    }
+
+    .Sec6 .Content .Title h1{
+        font-size: 15px;
+    }
+    
+    .Sec6 .Content .Price h1 {
+        font-size: 15px;
+    }
+    
+    .Sec6 .Content .Price h2 {
+        font-size: 6px;
+    }
+    
+    .Sec6 .Content .Button h3 {
+        margin-bottom: 4px;
+        font-size: 9px;
+    }
+
+    .Sec6 .Content .Button button {
+        padding: 5px 30px;
+        font-size: 9px;
+    }
 }
 
 /* footer */
@@ -659,4 +955,31 @@ body.DarkModeFun .Footer button:hover {
 
 body.DarkModeFun svg path:not(footer svg path) {
     fill: white !important;
+}
+
+@media (max-width: 520px) {
+    .Footer {
+        height: 300px;
+    }
+
+    .Top {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .Bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .QuickAccess {
+        width: 80%;
+        justify-content: space-around;
+    }
+
+    .SocialMedia {
+        width: 80%;
+    }
 }
